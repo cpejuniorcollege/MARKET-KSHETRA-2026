@@ -24,37 +24,24 @@ body{
 /* NAVBAR */
 
 .navbar{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
 
-    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    top:20px;
+    padding: 16px 20px;
 
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:90%;
-
-    max-width:1200px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:16px 28px;
-
-    background:rgba(255,255,255,.05);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:18px;
-
-    z-index:1000;
-
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+    z-index: 1000;
 }
 
 .logo{
@@ -1345,4 +1332,18 @@ section {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 16px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 0.9rem;
+    }
 }

@@ -833,3 +833,35 @@ body::after {
     box-shadow:0 0 30px rgba(124,58,237,.35);
 
 }
+/* ==========================
+      NAVBAR PREMIUM EFFECT
+========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+.navbar{
+
+    transition:.4s ease;
+
+}
+
+
+.navbar:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+
+/* ACTIVE SECTION FEEL */
+
+section{
+
+    scroll-margin-top:100px;
+
+}

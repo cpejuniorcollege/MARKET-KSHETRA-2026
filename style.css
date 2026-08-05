@@ -700,3 +700,60 @@ body::after {
     margin:12px;
 
 }
+/* ==========================
+      EVENT INFORMATION
+========================== */
+
+.event-info{
+
+    padding:120px 8%;
+
+}
+
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+    margin-top:60px;
+
+}
+
+
+.info-card{
+
+    padding:35px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    transition:.4s ease;
+
+}
+
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#8b5cf6;
+
+}
+
+
+.info-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+}

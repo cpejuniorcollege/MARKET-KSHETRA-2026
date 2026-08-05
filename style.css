@@ -1247,3 +1247,52 @@ body::after{
     }
 
 }
+/* ==========================
+      PREMIUM CARD GLOW
+========================== */
+
+.stall-card,
+.info-card,
+.contact-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.stall-card::before,
+.info-card::before,
+.contact-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    background:rgba(168,85,247,.15);
+
+    filter:blur(40px);
+
+    top:-50px;
+
+    right:-50px;
+
+    opacity:0;
+
+    transition:.5s;
+
+}
+
+
+.stall-card:hover::before,
+.info-card:hover::before,
+.contact-card:hover::before{
+
+    opacity:1;
+
+}

@@ -1081,3 +1081,81 @@ section{
     overflow:hidden;
 
 }
+/* ==========================
+      BACKGROUND GLOW EFFECTS
+========================== */
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+
+    height:450px;
+
+    background:rgba(168,85,247,0.18);
+
+    filter:blur(120px);
+
+    top:-150px;
+
+    left:-150px;
+
+    animation:moveGlow 8s infinite alternate;
+
+    z-index:-1;
+
+}
+
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:400px;
+
+    height:400px;
+
+    background:rgba(59,130,246,0.15);
+
+    filter:blur(120px);
+
+    bottom:-150px;
+
+    right:-150px;
+
+    animation:moveGlow 10s infinite alternate-reverse;
+
+    z-index:-1;
+
+}
+
+
+
+@keyframes moveGlow{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+
+    to{
+
+        transform:translate(80px,60px);
+
+    }
+
+}

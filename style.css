@@ -1050,3 +1050,34 @@ section{
     }
 
 }
+/* ==========================
+      GALLERY PREMIUM EFFECT
+========================== */
+
+.gallery-grid img{
+
+    transition:0.5s ease;
+
+    cursor:pointer;
+
+}
+
+
+.gallery-grid img:hover{
+
+    transform:scale(1.08);
+
+    filter:brightness(1.15);
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.35);
+
+}
+
+
+/* Smooth image loading */
+
+.gallery-grid{
+
+    overflow:hidden;
+
+}

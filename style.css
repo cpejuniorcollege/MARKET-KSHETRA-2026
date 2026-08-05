@@ -865,3 +865,110 @@ section{
     scroll-margin-top:100px;
 
 }
+/* ==========================
+        CONTACT SECTION
+========================== */
+
+.contact{
+
+    padding:120px 8%;
+
+}
+
+
+.contact .section-heading{
+
+    text-align:center;
+
+}
+
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+    margin-top:60px;
+
+}
+
+
+.contact-card{
+
+    padding:35px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:25px;
+
+    transition:0.4s ease;
+
+}
+
+
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 40px rgba(168,85,247,0.25);
+
+}
+
+
+.contact-card h3{
+
+    font-size:1.2rem;
+
+    margin-bottom:15px;
+
+}
+
+
+.contact-card p,
+.contact-card a{
+
+    color:#cfcfcf;
+
+    text-decoration:none;
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+}
+
+
+.contact-card a:hover{
+
+    color:#ffffff;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .contact{
+
+        padding:80px 5%;
+
+    }
+
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

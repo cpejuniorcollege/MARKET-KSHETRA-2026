@@ -196,3 +196,98 @@ body{
     transform:translateY(-4px);
 
 }
+/* ==========================
+   PREMIUM HERO BACKGROUND
+========================== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.bg-glow{
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.35;
+    animation:float 10s ease-in-out infinite;
+}
+
+.glow1{
+    background:#7c3aed;
+    top:-120px;
+    left:-120px;
+}
+
+.glow2{
+    background:#2563eb;
+    bottom:-120px;
+    right:-120px;
+    animation-delay:4s;
+}
+
+.bg-grid{
+    position:absolute;
+    inset:0;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+    background-size:50px 50px;
+
+    mask-image:radial-gradient(circle, white 40%, transparent 90%);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px) scale(1);
+    }
+
+    50%{
+        transform:translateY(-40px) scale(1.08);
+    }
+
+    100%{
+        transform:translateY(0px) scale(1);
+    }
+
+}
+/* ==========================
+   SCROLL REVEAL ANIMATION
+========================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    filter:blur(20px);
+
+    transition:
+    opacity .9s ease,
+    transform .9s ease,
+    filter .9s ease;
+
+    will-change:opacity,transform,filter;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    filter:blur(0);
+
+}

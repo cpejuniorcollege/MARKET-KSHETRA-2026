@@ -549,11 +549,16 @@ body::after {
     }
 
 
-    .nav-links{
+   .nav-links{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    gap:18px;
+}
 
-        display:none;
-
-    }
+.nav-links a{
+    font-size:14px;
+}
 
 
     .hero h1{

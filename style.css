@@ -1359,3 +1359,16 @@ section {
         font-size: 0.9rem;
     }
 }
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+}
